@@ -5,6 +5,8 @@
  
 // Vamos também inserir questão de frete para o envio da compra. O comprador precisa colocar o estado em que ele está. Se for de SP, o frete custa R$10,00. Se for do RJ, o frete é R$20,00 e, para os demais estados, o frete é R$30,00
 
+const prompt = require('prompt-sync')()
+
 function calculadoraImpostos(produto, direitoDesconto, cupom, estado){
 
     let ICMS = (Math.random() * 0.13 + 0.12).toFixed(2)
@@ -58,6 +60,8 @@ function calculadoraImpostos(produto, direitoDesconto, cupom, estado){
 // (Math.random() * 0.13 + 0.12).toFixed(2)
 // Determinar se o produto tem desconto ou não
 let aplicacaoDesconto = Math.random() >= 0.5
-let cupom = "promo15"
-let estado = "sp"
-console.log(calculadoraImpostos(564.99, aplicacaoDesconto, cupom, estado))
+let cupom = prompt("Digite o cupom: ")
+let estado = prompt("Digite o estado: ")
+let produto = parseFloat(prompt("Digite o valor do produto: "))
+
+console.log(calculadoraImpostos(produto, aplicacaoDesconto, cupom, estado))
