@@ -13,7 +13,7 @@
   Pra tornar as coisas mais interessantes, como o valor do imposto é variável, vamos brincar de loteria e deixar o valor do imposto randômico (entre os valores informados.... 12 a 25%)
   
 ## Desafio 2 - Melhorar Programa Bhaskara
-Melhore o programa de Bhaskara do desafio anterior, adicionando IFs para verificar se:
+Melhore o programa de Bhaskara do desafio anterior, adicionando IFs para verificar se: <br>
   a) A variável “a” é válida (não pode ser zero); <br>
   b) Se não existem raízes reais, e informar; <br>
   c) Se existe apenas uma raiz real, e informar essa raiz; <br>
