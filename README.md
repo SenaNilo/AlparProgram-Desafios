@@ -1,9 +1,9 @@
-# Desafio 01 JavaScript Básico
+# Desafios JavaScript Básico
 
-## Desafio de Bhaskara
+## Desafio 1 - Bhaskara
   Faça um programa em Javascript para calcular os valores x1 e x2 da fórmula de Bhaskara, usando as variáveis a, b e c, e mostre os valores x1 e x2. Usando os operadores de atribuição e aritméticos.
 
-## Desafio Adicional
+## Desafio 1 - Adicional
   A calculadora precisa conter 3 variáveis: uma que recebe um preço de um produto(em decimal, por favor), uma que informe se o produto tem direito a desconto (desconto de 10%), e o ICMS (que pode variar entre 12 e 25%)
  
   O ICMS deverá ser calculado após o produto receber (ou não desconto). 
@@ -11,3 +11,10 @@
   O progama deverá retornar o valor do produto original, se ele teve desconto, o valor do produto com desconto e o valor do produto com o imposto aplicado. 
  
   Pra tornar as coisas mais interessantes, como o valor do imposto é variável, vamos brincar de loteria e deixar o valor do imposto randômico (entre os valores informados.... 12 a 25%)
+  
+## Desafio 2 - Melhorar Programa Bhaskara
+Melhore o programa de Bhaskara do desafio anterior, adicionando IFs para verificar se:
+  a) A variável “a” é válida (não pode ser zero);
+  b) Se não existem raízes reais, e informar;
+  c) Se existe apenas uma raiz real, e informar essa raiz;
+  d) Se existem duas raízes reais, e as informar
