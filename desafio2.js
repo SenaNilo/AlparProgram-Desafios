@@ -4,6 +4,8 @@
 // b) Se não existem raízes reais, e informar;
 // c) Se existe apenas uma raiz real, e informar essa raiz;
 // d) Se existem duas raízes reais, e as informar
+const prompt = require('prompt-sync')()
+
 function formulaBhaskara(a, b, c){
     if(a == 0)
         return "Não é uma equação do segundo grau"
@@ -23,4 +25,8 @@ function formulaBhaskara(a, b, c){
     }
 }
 
-console.log(formulaBhaskara(2, -4, 2))
+let a = parseFloat(prompt("Digite o valor de a: ")) 
+let b = parseFloat(prompt("Digite o valor de b: "))
+let c = parseFloat(prompt("Digite o valor de c: "))
+
+console.log(formulaBhaskara(a, b, c))
