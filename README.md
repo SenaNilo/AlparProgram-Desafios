@@ -53,11 +53,11 @@ Dica:
 
   O jogador inicia com 100 pontos, e pode ganhar ou perder pontos ao "jogar" um dado de 6 faces, de acordo com as regras abaixo:
  
-  1 - Se o resultado do dado for ímpar, o jogador recebe 10 pontos
-  2 - Se o resultado do dado for par, o jogador perde 5 pontos.
-  3 - Se a rodada for múltipla de 3, o jogador ganha 15 pontos
-  4 - Se a rodada for múltipla de 4, o jogador perde 20 pontos
-  5 - Se a pontuação do jogador estiver negativa em qualquer momento, ele perde o dobro   pontos até a pontuação estar positivo
+  1. Se o resultado do dado for ímpar, o jogador recebe 10 pontos.<br>
+  2. Se o resultado do dado for par, o jogador perde 5 pontos.<br>
+  3. Se a rodada for múltipla de 3, o jogador ganha 15 pontos.<br>
+  4. Se a rodada for múltipla de 4, o jogador perde 20 pontos.<br>
+  5. Se a pontuação do jogador estiver negativa em qualquer momento, ele perde o dobro   pontos até a pontuação estar positivo.
 
 <ul>
   <li>O jogo é composto por 20 rodadas, e o jogador ganha se ele chegar na 20ª rodada com uma pontuação igual ou superior a 50 pontos.</li>
