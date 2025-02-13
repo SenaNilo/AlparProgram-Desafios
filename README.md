@@ -25,3 +25,21 @@
   Até o momento, a pessoa poderia ganhar um desconto randomicamente (ou não). Agora, o comprador pode colocar um cupom "PROMO15", que garante 15% de desconto no valor do produto. A pessoa pode colocar o código OU ganhar o desconto. 
  
   Vamos também inserir questão de frete para o envio da compra. O comprador precisa colocar o estado em que ele está. Se for de SP, o frete custa R$10,00. Se for do RJ, o frete é R$20,00 e, para os demais estados, o frete é R$30,00
+
+## Desafio 3 - Jogo de Adivinhação
+
+  Crie um programa que simula um jogo de adivinhação. O programa deve gerar um número
+aleatório entre 1 e 100 e permitir que o usuário tente adivinhar o número. O programa
+deve informar se o palpite é maior ou menor que o número secreto até que o usuário
+acerte.
+
+Regras:
+  1. O número secreto deve ser gerado aleatoriamente entre 1 e 100. <br>
+  2. O usuário pode fazer quantas tentativas quiser até acertar. <br>
+  3. Após cada tentativa, o programa deve exibir se o número é maior ou menor que o palpite. <br>
+  4. Quando o usuário acertar, o programa deve exibir uma mensagem de parabéns e o número de tentativas usadas. <br>
+Dica: <br>
+  Para gerar um número aleatório em Javascript, você pode usar o código: <br>
+  Math.round(Math.random() * 100); <br>
+  Math.random() é uma função que gera um número aleatório entre 0 e 1, e multiplicando por um número, você pode obter valores entre 0 e o número escolhido; <br>
+  Math.round() arredonda um número para inteiro, 5.4 é arredondado para 5, e 5.5 é arredondado para 6.
