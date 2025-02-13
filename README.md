@@ -39,8 +39,12 @@ Regras:
   3. Após cada tentativa, o programa deve exibir se o número é maior ou menor que o palpite. <br>
   4. Quando o usuário acertar, o programa deve exibir uma mensagem de parabéns e o número de tentativas usadas.
 
-Dica: <br>
-  Para gerar um número aleatório em Javascript, você pode usar o código: <br>
-  Math.round(Math.random() * 100); <br>
-  Math.random() é uma função que gera um número aleatório entre 0 e 1, e multiplicando por um número, você pode obter valores entre 0 e o número escolhido; <br>
+Dica:
+
+  Para gerar um número aleatório em Javascript, você pode usar o código:
+  
+      Math.round(Math.random() * 100);
+      
+  Math.random() é uma função que gera um número aleatório entre 0 e 1, e multiplicando por um número, você pode obter valores entre 0 e o número escolhido;
+  
   Math.round() arredonda um número para inteiro, 5.4 é arredondado para 5, e 5.5 é arredondado para 6.
