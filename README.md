@@ -38,6 +38,7 @@ Regras:
   2. O usuário pode fazer quantas tentativas quiser até acertar. <br>
   3. Após cada tentativa, o programa deve exibir se o número é maior ou menor que o palpite. <br>
   4. Quando o usuário acertar, o programa deve exibir uma mensagem de parabéns e o número de tentativas usadas.
+
 Dica: <br>
   Para gerar um número aleatório em Javascript, você pode usar o código: <br>
   Math.round(Math.random() * 100); <br>
