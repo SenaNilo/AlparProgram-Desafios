@@ -67,3 +67,20 @@ Dica:
   <li>A pontuação final deverá ser exibida na última rodada.</li>
   <li>Poderá ser exibido em tela avisos de ganho e perda de pontos</li>
 </ul>
+
+## Desafio 4 - Lista de Compras
+
+  Adicionar remover e visualizar a lista de compras, vetores e funcoes
+
+Regras:
+    1. O programa deve ter um array chamado listaDeCompras que começa vazio.
+    2. Deve oferecer as seguintes opções ao usuário:
+        o Adicionar um item à lista.
+        o Remover um item da lista.
+        o Exibir os itens da lista.
+        o Sair do programa.
+    3. O programa deve rodar até que o usuário escolha sair.
+    4. As funções devem ser utilizadas para organizar as operações principais:
+        o adicionarItem(item): Adiciona um item ao array.
+        o removerItem(item): Remove um item do array (se existir).
+        o exibirLista(): Mostra todos os itens da lista no console
