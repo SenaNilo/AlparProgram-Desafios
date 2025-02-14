@@ -76,15 +76,18 @@ Regras:<br>
 
 <ol>
    <li>O programa deve ter um array chamado listaDeCompras que começa vazio.</li>
-   <li>Deve oferecer as seguintes opções ao usuário:</li>
+   <li>Deve oferecer as seguintes opções ao usuário:</li> 
+  <br>
       <ul>
         <li>Adicionar um item à lista.</li>
         <li>Remover um item da lista.</li>
         <li>Exibir os itens da lista.</li>
         <li>Sair do programa.</li>
       </ul>
+  <br>
    <li>O programa deve rodar até que o usuário escolha sair.</li>
    <li>As funções devem ser utilizadas para organizar as operações principais:</li>
+  <br>
       <ul>
         <li>adicionarItem(item): Adiciona um item ao array.</li>
         <li>removerItem(item): Remove um item do array (se existir).</li>
