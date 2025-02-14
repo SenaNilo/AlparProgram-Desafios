@@ -73,14 +73,21 @@ Dica:
   Adicionar remover e visualizar a lista de compras, vetores e funcoes
 
 Regras:<br>
-    1. O programa deve ter um array chamado listaDeCompras que começa vazio.<br>
-    2. Deve oferecer as seguintes opções ao usuário:<br>
-        o Adicionar um item à lista.<br>
-        o Remover um item da lista.<br>
-        o Exibir os itens da lista.<br>
-        o Sair do programa.<br>
-    3. O programa deve rodar até que o usuário escolha sair.<br>
-    4. As funções devem ser utilizadas para organizar as operações principais:<br>
-        o adicionarItem(item): Adiciona um item ao array.<br>
-        o removerItem(item): Remove um item do array (se existir).<br>
-        o exibirLista(): Mostra todos os itens da lista no console<br>
+
+<ol>
+   <li>O programa deve ter um array chamado listaDeCompras que começa vazio.</li>
+   <li>Deve oferecer as seguintes opções ao usuário:</li>
+      <ul>
+        <li>Adicionar um item à lista.</li>
+        <li>Remover um item da lista.</li>
+        <li>Exibir os itens da lista.</li>
+        <li>Sair do programa.</li>
+      </ul>
+   <li>O programa deve rodar até que o usuário escolha sair.</li>
+   <li>As funções devem ser utilizadas para organizar as operações principais:</li>
+      <ul>
+        <li>adicionarItem(item): Adiciona um item ao array.</li>
+        <li>removerItem(item): Remove um item do array (se existir).</li>
+        <li>exibirLista(): Mostra todos os itens da lista no console</li>
+      </ul>
+</ol>
