@@ -25,7 +25,8 @@ function IsEmail(email){ //Regex para verificar se é um email
 function existingEmail(email){ //Verificar no sistea se já existe o usuario com este email
     let exist = false
     lsUsuarios.forEach((e) => {
-        exist = (e.email == email) ? true : false
+        if( e.email == email )
+            exist = true
     })
     return exist
 }
@@ -59,7 +60,8 @@ function removerUsuario(){
     
     if(existingEmail(remove)){
 
-        let index = lsUsuarios.indexOf(Usuario.email = remove)
+        //Usa-se find para primeiro achar o valor correspondente ao email dado pelo usuário, quando ele achar, ele retornará esse valor para poder buscar o seu index com a funcao indexOf(), para assim poder utilizar o splice, que remove um item de uma lista pelo seu index
+        let index = lsUsuarios.indexOf(lsUsuarios.find((e) => e.email == remove))
         lsUsuarios.splice(index, 1)
         
         console.log("\nUsuário removido com sucesso!")
