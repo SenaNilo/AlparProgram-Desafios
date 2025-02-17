@@ -14,6 +14,7 @@
 
 const prompt = require('prompt-sync')();
 
+//#region Functions
 function delay(ms, callback) {
     setTimeout(callback, ms);
 }
@@ -68,11 +69,10 @@ function exibirLista(){
         console.log((i+1) + ". " + listaDeCompras[i])
     }
 }
+//#endregion
 
-let listaDeCompras = []
-let item = ""
-let lsItens = []
-let opcao = 0;
+//Inicialização das variáveis
+let [listaDeCompras, item, lsItens, opcao] = [[], "", [], 0]
 let nome = prompt("Para começarmos digite seu nome: ")
 
 console.log(`Bem-vindo ${nome} ao seu gerenciador de compras!`)

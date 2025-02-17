@@ -16,9 +16,7 @@
 
 const prompt = require('prompt-sync')()
 
-let dado
-let pontos = 100
-let perdaPontos = 0
+let [dado, pontos, perdaPontos] = [0, 100, 0]
 
 console.log("\n------------------------------------\nBem-vindo ao jogo de dados! Você começa com 100 pontos com o objetivo de chegar na 20ª rodada com 50 pontos ou mais. Boa sorte! \n------------------------------------")
 

@@ -56,6 +56,7 @@ function calculadoraImpostos(produto, direitoDesconto, cupom, estado){
 
     return msg
 }
+
 // a conta é pra determinar o "range" de 12 a 25% com 2 casas decimais
 // (Math.random() * 0.13 + 0.12).toFixed(2)
 // Determinar se o produto tem desconto ou não

@@ -17,9 +17,8 @@
 // Math.round() arredonda um número para inteiro, 5.4 é arredondado para 5, e 5.5 é
 // arredondado para 6.
 
-let palpite = prompt("Digite um número entre 0 e 100: ")
 let numero = Math.round(Math.random() * 100)
-
+let palpite = prompt("Digite um número entre 0 e 100: ")
 
 while(palpite < 0 || palpite > 100){
     palpite = prompt("O número deve estar entre 0 e 100:")
@@ -31,4 +30,5 @@ while(palpite != numero) {
     else 
         palpite = prompt("O número é menor, tente novamente!")
 }
+
 alert("Parabéns, você acertou! O número era: " + numero)

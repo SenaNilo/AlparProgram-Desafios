@@ -26,9 +26,9 @@
 
 */
 
-
 const prompt = require('prompt-sync')();
 
+//#region Funções
 function getRandomTask(min, max) {
     return Math.round(Math.random() * (max - min + 1)) + min;
 }
@@ -66,7 +66,9 @@ function getMenor(){
     }
 
 }
+//#endregion
 
+//inicialização das variaveis
 let [loop, pessoas, mediaPonderada, pontuacaoTT, numTarefas, pontuacao, somaPesos, qtdPessoasTT] = [0, [], [], 0, 0, 0, 0, 0]
 
 do{
@@ -77,7 +79,6 @@ do{
         console.log("Mínimo 3 integrantes para o sistema!")
 
 }while(qtdPessoasTT < 3)
-
 
 console.log("")
 
@@ -114,7 +115,6 @@ while(loop < qtdPessoasTT){
     loop++
     console.log("")
 }
-
 
 //Mostrar na tela as médias dos integrantes
 for(let j = 0; j < qtdPessoasTT; j++){
