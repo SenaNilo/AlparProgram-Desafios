@@ -121,16 +121,16 @@ Regras:<br>
   1. O programa deve armazenar os usuários em um array de objetos, onde cada
   objeto representa uma pessoa com as propriedades:
 
-  o nome
-  o idade
-  o email
+   o nome <br>
+   o idade <br>
+   o email <br>
 
   3. O usuário poderá escolher entre as seguintes opções:
      
-  o Adicionar um novo usuário.
-  o Remover um usuário pelo email.
-  o Listar todos os usuários cadastrados.
-  o Sair do programa.
+   o Adicionar um novo usuário. <br>
+   o Remover um usuário pelo email. <br>
+   o Listar todos os usuários cadastrados. <br>
+   o Sair do programa. <br>
   
   5. O programa deve rodar até que o usuário escolha sair.
      
