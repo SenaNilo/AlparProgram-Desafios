@@ -40,24 +40,32 @@ function getRandomScore(min, max) {
 }
 function getMaior(){
     let maior = Number(Math.max(...mediaPonderada))
+    let igual = 0 //caso tenham medias iguais
     for(let i = 0; i < mediaPonderada.length; i++){
         if(maior == mediaPonderada[i]){
-            console.log("\nMaior média é do(a) " + pessoas[i] + " com a nota de " + mediaPonderada[i])
+            if(igual <= 0)
+                console.log("\nMaior média é do(a) " + pessoas[i] + " com a nota de " + mediaPonderada[i])
+            else
+                console.log("Com empate de junto da(o) " + pessoas[i])  
+            igual++
         }
     }
 
 }
 function getMenor(){
     let menor = Number(Math.min(...mediaPonderada))
-    
+    let igual = 0 //caso tenham medias iguais
     for(let i = 0; i < mediaPonderada.length; i++){
         if(menor == mediaPonderada[i]){
-            console.log("\nMenor média do(a) " + pessoas[i] + " com a nota de " + mediaPonderada[i])
+            if(igual <= 0)
+                console.log("\nMenor média do(a) " + pessoas[i] + " com a nota de " + mediaPonderada[i])
+            else
+                console.log("Com empate de junto da(o) " + pessoas[i])
+            igual++
         }
     }
 
 }
-
 
 let [loop, pessoas, mediaPonderada, pontuacaoTT, numTarefas, pontuacao, somaPesos, qtdPessoasTT] = [0, [], [], 0, 0, 0, 0, 0]
 
@@ -86,22 +94,21 @@ while(loop < qtdPessoasTT){
         // (i % 2 == 0) ?  : getRandomScore(0, 10) 
         //Aqui está trocado de propósito pois o indice i sendo par, será uma tarefa ímpar e vice e versa. já que { i: n => n+1 }
         
-        console.log("Tarefa " + (i+1) + " pontuação: " + pontuacao)   
-        console.log("SomaPesos " + somaPesos)   
+        console.log("Tarefa " + (i+1) + " pontuação: " + pontuacao) 
 
         pontuacaoTT += Number(pontuacao)
     }
 
-    console.log("Ppontuacao tt " + pontuacaoTT)
+    console.log("Pontuacao tt " + pontuacaoTT)
 
     mediaPonderada[loop] = pontuacaoTT / somaPesos
 
-    if(mediaPonderada[loop] > 8){
+    if(mediaPonderada[loop] > 8) //caso a media passe de 8, ganha 2 pontos
         mediaPonderada[loop] += 2
-    }
+    
     mediaPonderada[loop] = (mediaPonderada[loop]).toFixed(2)
 
-    //Finalizadodes
+    //Finalizaçoes
     pontuacaoTT = 0
     somaPesos = 0
     loop++
@@ -109,12 +116,13 @@ while(loop < qtdPessoasTT){
 }
 
 
-
+//Mostrar na tela as médias dos integrantes
 for(let j = 0; j < qtdPessoasTT; j++){
     console.log(pessoas[j] + " teve média ponderada de " + mediaPonderada[j])
 }
-
+//Mostrar quem teve a maior média
 getMaior()
+//Mostrar quem teve a menor média
 getMenor()
 
 // //precisa dos 3 ponsos para funcionar esta funcao, separando cada elemento ao comando, console.log(Math.min(...mediaPonderada))
