@@ -94,3 +94,21 @@ Regras:<br>
         <li>exibirLista(): Mostra todos os itens da lista no console</li>
       </ul>
 </ol>
+
+## Desafio 4 - Adicional, Análise de Desempenho de Equipe
+
+  Vocês vão criar um sistema de análise de desempenho de uma equipe. 
+ 
+  A quantidade de membros da equipe fica de acordo com o gosto de vocês, desde que seja um mínimo de 3 pessoas. 
+ 
+  Cada pessoa receberá uma pontuação com base na quantidade de tarefas que forem completadas e, para considerar a nota final, deverão ser levados em conta os seguintes critérios:
+ 
+  1) Cada tarefa recebe uma pontuação de 0 a 10 <br>
+  2) o número de tarefas varia entre 5 e 10, por pessoa da equipe.<br>
+ 
+  A pontuação final de cada membro é feita de acordo com a média ponderada. Ou seja, tarefas ímpares recebem peso 2, enquanto tarefas pares recebem peso 1. 
+ 
+  Caso a média ponderada de um membro seja maior que 8, ele recebe um bônus de 2 pontos. 
+ 
+  O sistema precisa retornar o nome e a média de cada pessoa do time, quem teve o melhor desempenho, e quem teve o pior desempenho
+
