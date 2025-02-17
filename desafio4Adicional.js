@@ -38,6 +38,27 @@ function getRandomScore(min, max) {
         return 10
     return r
 }
+function getMaior(){
+    let maior = Number(Math.max(...mediaPonderada))
+    for(let i = 0; i < mediaPonderada.length; i++){
+        if(maior == mediaPonderada[i]){
+            console.log("\nMaior média é do(a) " + pessoas[i] + " com a nota de " + mediaPonderada[i])
+        }
+    }
+
+}
+function getMenor(){
+    let menor = Number(Math.min(...mediaPonderada))
+    
+    for(let i = 0; i < mediaPonderada.length; i++){
+        if(menor == mediaPonderada[i]){
+            console.log("\nMenor média do(a) " + pessoas[i] + " com a nota de " + mediaPonderada[i])
+        }
+    }
+
+}
+
+
 let [loop, pessoas, mediaPonderada, pontuacaoTT, numTarefas, pontuacao, somaPesos, qtdPessoasTT] = [0, [], [], 0, 0, 0, 0, 0]
 
 do{
@@ -91,26 +112,6 @@ while(loop < qtdPessoasTT){
 
 for(let j = 0; j < qtdPessoasTT; j++){
     console.log(pessoas[j] + " teve média ponderada de " + mediaPonderada[j])
-}
-
-function getMaior(){
-    let maior = Number(Math.max(...mediaPonderada))
-    for(let i = 0; i < mediaPonderada.length; i++){
-        if(maior == mediaPonderada[i]){
-            console.log("\nMaior média é do(a) " + pessoas[i] + " com a nota de " + mediaPonderada[i])
-        }
-    }
-
-}
-function getMenor(){
-    let menor = Number(Math.min(...mediaPonderada))
-    
-    for(let i = 0; i < mediaPonderada.length; i++){
-        if(menor == mediaPonderada[i]){
-            console.log("\nMenor média do(a) " + pessoas[i] + " com a nota de " + mediaPonderada[i])
-        }
-    }
-
 }
 
 getMaior()
